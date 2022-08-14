@@ -25,7 +25,7 @@ BATCH_SIZE_TEST = 1
 ENCODER = 'timm-efficientnet-b4'
 DECODER = 'MAnet'
 lr = 5.748492383047837e-05
-BEST_MODEL = "/storage1/ryazantsev/lumbar_spine/experiments/timm-efficientnet-b4-MAnet-N6-M9-MSELoss-lr5.748492383047837e-05-perbatch/checkpoints/best.pth"
+BEST_MODEL = "best_model/best.pth"
 
 #optuna
 NUM_EPOCHS = 500
