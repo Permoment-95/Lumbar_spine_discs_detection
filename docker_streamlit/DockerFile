@@ -1,0 +1,12 @@
+FROM pytorch/pytorch:1.9.0-cuda10.2-cudnn7-runtime
+RUN pip install --upgrade pip
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y python3-opencv
+RUN pip install opencv-python
+
+COPY requirements/requirements-py3.txt ./requirements-py3.txt
+RUN pip install -r requirements-py3.txt
+EXPOSE 7341
+COPY . /app
+CMD streamlit run app.py --server.port 7341

@@ -1,0 +1,5 @@
+streamlit
+numpy
+matplotlib
+pydicom
+segmentation-models-pytorch
