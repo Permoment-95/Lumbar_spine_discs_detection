@@ -2,6 +2,7 @@ NUM_DEVICE = "0"
 
 #prepare data
 PATH_TO_TRAIN_IMAGES = "../train_data/slices_train"
+PATH_TO_TEST_IMAGES = "../test_data/slices_test"
 PATH_TO_ANNOTATION = "../train_data/annotation_train.pkl"
 
 
@@ -36,5 +37,8 @@ N_STARTUP_TRIALS = 15
 N_WARMUP_STEPS = 25
 
 N_TRIALS = 200
+
+#
+PATH_TO_DUMP_RESULT = "../test_results"
 
 
